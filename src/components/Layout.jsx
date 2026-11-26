@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { PROJECTS } from "../data/projects.js";
 import { DISCLAIMER, PHONE, WA } from "../config.js";
 import { showToast } from "../lib/site.js";
+import LeadPopup from "./LeadPopup.jsx";
 
 export function Header() {
   return (
@@ -197,6 +198,7 @@ export function Footer() {
       </div>
       <CookieBanner />
       <Toast />
+      <LeadPopup />
     </>
   );
 }
